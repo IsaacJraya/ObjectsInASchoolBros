@@ -1,0 +1,15 @@
+#h1 {
+    text-align: center;
+    content: "Object In a SchoolHouse";
+    text-decoration-color: black;
+    font-size: 100pc;
+
+}
+
+body {
+    background: lightgrey;
+}
+#system {
+    background-color: white;
+}
+

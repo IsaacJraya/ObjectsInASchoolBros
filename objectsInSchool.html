@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Objects In a School</title>
+    <script src="Objects.js"></script>
+    <script src="Actions.js"></script>
+    <script src="Data.js"></script>
+    <link rel="stylesheet" href="schoolHouse.css">
+</head>
+<body onload="buildSelectLists()">
+<br><br>
+
+<br><br>
+
+<h1>Objects in a SchoolHouse</h1>
+<table id="system" border="10" cellspacing="10" cellpadding="10">
+    <tr id="Students">
+        <td> Add New Student (first name): </td>
+        <td> <input type="text" id="studentFirstName" placeholder="Enter First Name" value="" size="15"> </td>
+        <td> Student Last Name:</td>
+        <td> <input type="text" id="studentLastName" placeholder="Enter Last Name " value="" size="15"> </td>
+        <td> Student Grade:</td>
+        <td> <input type="text" id="studentGrade" placeholder="Enter Grade" value="" size="15"></td>
+        <td>  <button onclick="addStudent()">Add New Student</button> </td>
+    </tr>
+    <tr id="Teachers">
+        <td> Add New Teacher (first name): </td>
+        <td> <input type="text" id="teacherFirstName" placeholder="Enter First Name" value="" size="15"></td>
+        <td> Teacher Last Name:</td>
+        <td> <input type="text" id="teacherLastName" placeholder="Enter Last Name" value="" size="15"></td>
+        <td> Teacher Subject </td>
+        <td> <input type="text" id="teacherSubject" placeholder="Enter Subject" value="" size="15"></td>
+        <td> <button onclick="addTeacher()">Add New Teacher</button></td>
+    </tr>
+    <tr id="Sections">
+        <td> Add New Section (Class Title): </td>
+        <td> <input type="text" id="sectionName" placeholder="Enter Section Name" value="" size="15"></td>
+        <td> Section Count</td>
+        <td> <input type="text" id="sectionCount" placeholder ="Enter Section Count" value="" size="15"></td>
+        <td> <button onclick="addSection()">Add New Section</button></td>
+    </tr>
+
+</table>
+<br><br>
+<select id="listAllBros">
+    <option value="teehee">List Things</option>
+    <option value="listStudents">List Students</option>
+    <option value="listTeachers">List Teachers</option>
+    <option value="listSections">List Sections</option>
+</select>
+
+<button onclick="listAll()">List</button>
+<div id="listFunction"></div>
+<div id="newStudent"></div>
+<div id="studentTable"></div>
+<div id="teacherTable"></div>
+<div id="sectionTable"></div>
+
+
+<br><br>
+<br><br>
+
+
+<select id="studentSelectList">
+    <option value="x">Select Student to add</option>
+</select>
+<select id="sectionSelectList">
+    <option value="x">Select Section to add to</option>
+</select>
+<button onclick="addStudentToSection()">Add Student to Section</button>
+<br><br>
+<select id="teacherSelectList">
+    <option value="x">Select Teacher to add</option>
+</select>
+<select id="sectionSelectList2">
+    <option value="x">Select Section to add to</option>
+</select>
+<button onclick="addTeacherToSection()">Add Teacher to Section</button>
+
+<br><br>
+<br><br>
+<select id="sectionSelectList3">
+    <option value="x">Select Section to list students</option>
+</select>
+<button onclick="listStudentsInSections()">List Students In Sections</button>
+<br><br>
+<select id="sectionSelectList4">
+    <option value="x">Select Section to list teachers</option>
+</select>
+<button onclick="listTeachersInSections()">List Teachers In Sections</button>
+<div id="output"></div>
+<div id="output2"></div>
+</body>
+</html>
